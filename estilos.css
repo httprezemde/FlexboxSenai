@@ -12,70 +12,33 @@
 
 
 .wrapper{
+ background-color: violet;
 min-height: 100vh;
-background-color: blueviolet;
-  display: flex;
+max-width: 800px;
+margin: 0 auto;
+padding: 15px;
+display: flex;
 flex-direction: column;
 gap: 15px;
-padding: 15px;
-}
 
-header, main, footer{
-    color: black;
-    font-weight: bold;
-    font-size: 30px;
-    flex: 4;
-    border: 5px solid black;
-}
-
-header{
-    background-color: red;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 main{
-    background-color: yellow;
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-.content1, .content2, .content3{
-    background-color: lightgreen;
-    height: 100px;
-    width: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    margin: 0 10px;
-}
-
-footer{
-    background-color: orange;
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.content3{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-article{
-    background-color: lightcoral;
-    height: 40px;
+    height: 100%;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
+  background-color: orange;
+   flex: 1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    border: 5px solid black;
+    box-shadow: 5px 5px;
+    
+  
+}
+
+@media screen and (max-width: 800px){
+   main{
+      flex-direction: column;
+   }
 }
